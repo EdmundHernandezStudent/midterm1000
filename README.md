@@ -6,3 +6,4 @@ This is _Edmund Hernandez's_ page for a midterm project.
 
 > Below are some **links** to other pages.
 > Hope you enjoy!
+- [Here's the source for the Panda image above](https://www.britannica.com/animal/giant-panda)
