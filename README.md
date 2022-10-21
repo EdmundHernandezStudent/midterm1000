@@ -22,13 +22,22 @@ This is _Edmund Hernandez's_ page for a midterm project.
 
 <form action="randomNumCompare()">
   <label for= "textBox">Put in a number and see if its the same number the random function gives (0 to 10):</label></br>
-  <input type="text" id="textBox" name="textBox"></input></br>
+  <input type="text" id="textBox" name="textBox" value=""></input></br>
   <input type="submit value="Submit">
 </form>
+
+<p="output"></p>
   
  <script>
 function randomNumCompare() {
   var machineNum = Math.floor(Math.random() * 11)
+  var textBoxSum= getElementById("textBox")
+  
+if (textBoxSum == machineNum) {
+  document.getElementById("output").innerHTML = "The numbers match!"
+  } else if {
+  document.getElementById("output").innerHTML = "The numbers did not match!"
+  }
 }
 </script>
 </body>
