@@ -16,6 +16,8 @@ This is _Edmund Hernandez's_ page for a midterm project.
 <html>
 
 <head>
+<meta charset="UTF-8">
+<title>Number Guesser</title>
   <script>
   function randomNumCompare() {
     var machineNum = Math.floor(Math.random() * 11)
