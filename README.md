@@ -8,6 +8,6 @@ This is _Edmund Hernandez's_ page for a midterm project.
 > Hope you enjoy!
 - [Here's the source for the Panda image above](https://www.britannica.com/animal/giant-panda)
 - [Here's a page with a donut](secondPage.md)
-- [Here's a page with a banana](thirdPage.md)
+- [Here's a page with bananas](thirdPage.md)
 - [Here's a page with a pineapple](fourthPage.md)
 - [Here's a page with a coconut](fifthPage.md)
