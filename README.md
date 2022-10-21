@@ -16,17 +16,18 @@ This is _Edmund Hernandez's_ page for a midterm project.
 <html>
 
 <head>
-<script>
-function randomNumCompare() {
-  var machineNum = Math.floor(Math.random() * 11)
-}
-</script>
 </head>
   
 <body>
 >Put in a number and see if its the same number the random function gives (0 to 10).
 //Put in input box and sumbit
   
+  
+ <script>
+function randomNumCompare() {
+  var machineNum = Math.floor(Math.random() * 11)
+}
+</script>
 </body>
 
 </html>
