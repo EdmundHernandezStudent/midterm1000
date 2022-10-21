@@ -11,6 +11,7 @@ This is _Edmund Hernandez's_ page for a midterm project.
 - [Here's a page with bananas](thirdPage.md)
 - [Here's a page with a pineapple](fourthPage.md)
 - [Here's a page with a coconut](fifthPage.md)
+- [Here's a page about the prisoner's dilemma which I made years ago](prisonchoice.html)
 
 <!DOCTYPE html>
 <html>
