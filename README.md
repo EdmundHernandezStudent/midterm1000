@@ -11,3 +11,21 @@ This is _Edmund Hernandez's_ page for a midterm project.
 - [Here's a page with bananas](thirdPage.md)
 - [Here's a page with a pineapple](fourthPage.md)
 - [Here's a page with a coconut](fifthPage.md)
+
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+<script>
+function randomNumCompare() {
+  var machineNum = Math.floor(Math.random() * 11)
+}
+
+</script>
+>Put in a number and see if its the same number the random function gives (0 to 10).
+//Put in input box and sumbit
+</body>
+
+</html>
