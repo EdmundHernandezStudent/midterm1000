@@ -19,9 +19,12 @@ This is _Edmund Hernandez's_ page for a midterm project.
 </head>
   
 <body>
->Put in a number and see if its the same number the random function gives (0 to 10).
-//Put in input box and sumbit
-  
+
+<form action="randomNumCompare()">
+  <label for= "textBox">Put in a number and see if its the same number the random function gives (0 to 10):</label></br>
+  <input type="text" id="textBox" name="textBox"></input></br>
+  <input type="submit value="Submit">
+</form>
   
  <script>
 function randomNumCompare() {
