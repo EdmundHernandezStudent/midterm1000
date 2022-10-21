@@ -1,0 +1,131 @@
+ <html>
+
+<head>
+	<title>Prisoner's Choice</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+p {
+	background-color:red;
+	font-family:oswald-regular;
+	color:white;
+	text-align: center;
+	margin:5;
+	padding:2;	
+	font-size:60px;
+}
+
+div {
+	background-color:maroon;
+	border:5px;
+	user-select:none;
+}
+
+button {
+	border:none;
+	font-family:oswald-regular;
+	color:white;
+	width:100%;
+	height:300px;
+	margin:2;
+	padding:2;
+	display:inline;
+	justify-content: center;
+	align-items: center;
+	font-size:150px;
+	user-select:none;
+	outline:none;
+}
+.co {
+	background-color:blue;
+
+}
+
+.li {
+	background-color:orange;
+}
+
+@font-face {
+	font-family:Oswald-Regular;
+	src:url(oswald-regular.ttf);
+}
+
+::-webkit-scrollbar {
+	width:15px;
+}
+
+::-webkit-scrollbar-track {
+	background-color:black;
+}
+
+::-webkit-scrollbar-thumb {
+	background:red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background:maroon;
+}
+</style>
+<body style="background-color:maroon;">
+
+
+<button id="c" class="co" value="confess" onclick="cof()">Confess</button>
+<button id="l" class="li" value="lie" onclick="lie()">Silent</button>
+
+<div>
+	<p id="results" style="background-color:maroon;"></p>
+	
+	<p id="fear"></p>
+	
+	<p id="fear2"></p>
+	
+	<p id="fear3"></p>
+</div>
+<script>
+var tt = 0;
+var greeting;
+var reply;
+
+/* opp() is the problem area. And yes I did put the javascript in the html.*/
+function opp(){
+	var numb = (Math.round(Math.random()));
+	if (numb&&tt===1) {
+		reply = "You both confessed! Two years in prison for the both of 'ye!";
+	} else if(tt<numb){
+		reply = "You did not confess. The other did. Five years for just you!";
+	} else if(tt>numb){
+		reply = "You confessed, the other did not. You're free!";
+	} else if(numb===0&&tt===0){
+		reply = "No one confessed! Five years in prison for you and the other one.";
+	} else {
+		reply = "oh no!";
+	}
+	document.getElementById("fear").innerHTML = reply;
+	document.getElementById("fear2").innerHTML = ("You (Matrix):"+tt);
+	document.getElementById("fear3").innerHTML = ("Other(Matrix):"+numb);
+}
+
+function hope(){
+	if (tt>0) {
+		greeting = "You confessed!";
+	} else {
+		greeting = "You stayed silent!";
+	}
+	document.getElementById("results").innerHTML = greeting;
+	opp()
+}
+
+function cof() {
+	tt = 1;
+	hope()
+}
+
+function lie() {
+	tt = 0;
+	hope()
+}
+</script>
+</body>
+
+</html>
