@@ -1,5 +1,5 @@
 ## Bananas
 
-!(Bananas from Wikipedia)[Bananavarieties.jpg]
+![Bananas from Wikipedia](Bananavarieties.jpg)
 
 [Go back](README.md)
