@@ -22,7 +22,7 @@ This is _Edmund Hernandez's_ page for a midterm project.
   
   function randomNumCompare() {
     var machineNum = Math.floor(Math.random() * 11);
-    var textBoxSum = document.getElementById("textBox");
+    var textBoxSum = Math.floor(Math.random() * 11);
 
   if (textBoxSum == machineNum) {
     document.getElementById("output").innerHTML = "The numbers match!";
@@ -33,13 +33,7 @@ This is _Edmund Hernandez's_ page for a midterm project.
 
 </head>
   
-<body>
-
-<form action="randomNumCompare()">
-  <label for= "textBox">Put in a number and see if its the same number the random function gives (0 to 10):</label></br>
-  <input type="text" id="textBox" name="textBox"></input></br>
-  <input type="submit value="Submit">
-</form>
+<body onload="randomNumCompare()">
 
 <p="output"></p>
 
