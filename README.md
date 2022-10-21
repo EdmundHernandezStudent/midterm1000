@@ -14,21 +14,22 @@ This is _Edmund Hernandez's_ page for a midterm project.
 
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="UTF-8">
 <title>Number Guesser</title>
-  <script>
+<script>
+  
   function randomNumCompare() {
-    var machineNum = Math.floor(Math.random() * 11)
-    var textBoxSum = document.getElementById("textBox")
+    var machineNum = Math.floor(Math.random() * 11);
+    var textBoxSum = document.getElementById("textBox");
 
   if (textBoxSum == machineNum) {
-    document.getElementById("output").innerHTML = "The numbers match!"
+    document.getElementById("output").innerHTML = "The numbers match!";
   } else if (textBoxSum != machineNum) {
-    document.getElementById("output").innerHTML = "The numbers did not match!"
+    document.getElementById("output").innerHTML = "The numbers did not match!";
   }}
-  </script>
+</script>
+
 </head>
   
 <body>
