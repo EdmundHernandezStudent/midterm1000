@@ -28,18 +28,20 @@ This is _Edmund Hernandez's_ page for a midterm project.
 
 <p="output"></p>
   
- <script>
+<script>
 function randomNumCompare() {
   var machineNum = Math.floor(Math.random() * 11)
-  var textBoxSum= getElementById("textBox")
+  var textBoxSum = getElementById("textBox")
   
 if (textBoxSum == machineNum) {
   document.getElementById("output").innerHTML = "The numbers match!"
-  } else if {
+} else if (textBoxSum != machineNum) {
   document.getElementById("output").innerHTML = "The numbers did not match!"
-  }
+}
+  
 }
 </script>
+ 
 </body>
 
 </html>
