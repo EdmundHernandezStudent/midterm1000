@@ -16,7 +16,16 @@ This is _Edmund Hernandez's_ page for a midterm project.
 <html>
 
 <head>
-  
+  <script>
+  function randomNumCompare() {
+    var machineNum = Math.floor(Math.random() * 11)
+    var textBoxSum = document.getElementById("textBox")
+
+  if (textBoxSum == machineNum) {
+    document.getElementById("output").innerHTML = "The numbers match!"
+  } else if (textBoxSum != machineNum) {
+    document.getElementById("output").innerHTML = "The numbers did not match!"
+  }}
 </head>
   
 <body>
@@ -28,19 +37,6 @@ This is _Edmund Hernandez's_ page for a midterm project.
 </form>
 
 <p="output"></p>
-  
-<script>
-function randomNumCompare() {
-  var machineNum = Math.floor(Math.random() * 11)
-  var textBoxSum = document.getElementById("textBox")
-  
-if (textBoxSum == machineNum) {
-  document.getElementById("output").innerHTML = "The numbers match!"
-} else if (textBoxSum != machineNum) {
-  document.getElementById("output").innerHTML = "The numbers did not match!"
-}
-  
-}
-</script>
+
 </body>
 </html>
