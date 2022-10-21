@@ -26,6 +26,7 @@ This is _Edmund Hernandez's_ page for a midterm project.
   } else if (textBoxSum != machineNum) {
     document.getElementById("output").innerHTML = "The numbers did not match!"
   }}
+  </script>
 </head>
   
 <body>
